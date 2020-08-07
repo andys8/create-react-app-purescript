@@ -11,6 +11,8 @@ npm start
 
 ## Step by Step Instructions
 
+Either follow these steps or clone/fork this example repository.
+
 ### Create react application with typescript
 
 ```shell
@@ -44,8 +46,22 @@ Add npm script:
 }
 ```
 
+Install dependencies with `npm i`.
+
 ### Install spago `react-basic-hooks`
 
 ```shell
 npx spago install react-basic react-basic-dom react-basic-hooks
+```
+
+### Add PureScript React Component
+
+- Add a PureScript component: [`Counter.ps`](./src/Counter.purs)
+- Allow module import in TS: [`purescript-module.d.ts`](src/purescript-module.d.ts)
+- Import the component and use it: [`App.tsx`](./src/App.tsx)
+
+```tsx
+import { mkCounter as Counter } from "./Counter.purs";
+// ...
+<Counter />;
 ```
