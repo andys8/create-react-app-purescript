@@ -1,8 +1,10 @@
 # `create-react-app` PureScript Example
 
-How to integrate `create-react-app` with `PureScript`
+How to integrate [`create-react-app`](https://create-react-app.dev) with [PureScript](https://www.purescript.org)
 
-## Run this Example
+## Try this example
+
+This example is a React application containing a [PureScript component](./src/Counter.purs).
 
 ```shell
 npm install
@@ -38,7 +40,7 @@ npm install purescript spago --save-dev
 npx spago init
 ```
 
-Add npm script:
+Add npm script in `package.json` and install dependencies with `npm install`
 
 ```json
 {
@@ -46,9 +48,10 @@ Add npm script:
 }
 ```
 
-Install dependencies with `npm i`.
-
 ### Install spago `react-basic-hooks`
+
+This example is using [`react-basic`](https://github.com/lumihq/purescript-react-basic)
+and [`react-basic-hooks`](https://github.com/spicydonuts/purescript-react-basic-hooks)
 
 ```shell
 npx spago install react-basic react-basic-dom react-basic-hooks
@@ -63,5 +66,7 @@ npx spago install react-basic react-basic-dom react-basic-hooks
 ```tsx
 import { mkCounter as Counter } from "./Counter.purs";
 // ...
-<Counter />;
+function App() {
+  return <Counter />;
+}
 ```
