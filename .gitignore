@@ -125,3 +125,9 @@ dist
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# PureScript
+output
+.psc*
+.purs*
+.spago
