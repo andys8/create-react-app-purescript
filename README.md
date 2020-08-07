@@ -29,8 +29,9 @@ Extend craco configuration to use `craco-purescript-loader`
 
 <https://github.com/andys8/craco-purescript-loader>
 
-### Install PureScript Dependencies
+### Install PureScript and initialize spago
 
 ```shell
 npm install purescript spago --save-dev
+npx spago init
 ```
