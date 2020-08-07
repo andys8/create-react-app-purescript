@@ -35,3 +35,17 @@ Extend craco configuration to use `craco-purescript-loader`
 npm install purescript spago --save-dev
 npx spago init
 ```
+
+Add npm script:
+
+```json
+{
+  "postinstall": "spago build --deps-only"
+}
+```
+
+### Install spago `react-basic-hooks`
+
+```shell
+npx spago install react-basic react-basic-dom react-basic-hooks
+```

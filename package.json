@@ -17,6 +17,7 @@
     "typescript": "~3.7.2"
   },
   "scripts": {
+    "postinstall": "spago build --deps-only",
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
