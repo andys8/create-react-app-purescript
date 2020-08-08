@@ -15,7 +15,7 @@ npm start
 
 Either follow these steps or clone/fork this example repository.
 
-### Create react application with typescript
+### Create react application with TypeScript
 
 ```shell
 npx create-react-app create-react-app-purescript --template typescript
@@ -23,7 +23,7 @@ npx create-react-app create-react-app-purescript --template typescript
 
 ### Install `craco`
 
-Follow instructions to use `craco`
+Follow instructions to use `craco` to overwrite parts of the `create-react-app` configuration
 
 <https://github.com/gsoft-inc/craco/blob/master/packages/craco/README.md#installation>
 
@@ -33,7 +33,9 @@ Extend craco configuration to use `craco-purescript-loader`
 
 <https://github.com/andys8/craco-purescript-loader>
 
-### Install PureScript and initialize spago
+### Setup PureScript
+
+Install PureScript (compiler) and initialize spago (package manager)
 
 ```shell
 npm install purescript spago --save-dev
@@ -48,7 +50,7 @@ Add npm script in `package.json` and install dependencies with `npm install`
 }
 ```
 
-### Install spago `react-basic-hooks`
+### Install `react-basic-hooks`
 
 This example is using [`react-basic`](https://github.com/lumihq/purescript-react-basic)
 and [`react-basic-hooks`](https://github.com/spicydonuts/purescript-react-basic-hooks)
