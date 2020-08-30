@@ -6,7 +6,7 @@ module.exports = {
       plugin: cracoPureScriptLoader,
       options: {
         spago: true,
-        pscIde: true,
+        pscIde: false,
       },
     },
   ],
