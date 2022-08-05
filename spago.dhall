@@ -1,16 +1,6 @@
-{-
-Welcome to a Spago project!
-You can edit this file as you like.
--}
-{ name = "my-project"
+{ name = "create-react-app-purescript"
 , dependencies =
-  [ "console"
-  , "effect"
-  , "psci-support"
-  , "react-basic"
-  , "react-basic-dom"
-  , "react-basic-hooks"
-  ]
+  [ "effect", "prelude", "react-basic", "react-basic-dom", "react-basic-hooks" ]
 , packages = ./packages.dhall
 , sources = [ "src/**/*.purs" ]
 }

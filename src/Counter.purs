@@ -8,18 +8,15 @@ import React.Basic.Events (handler_)
 import React.Basic.Hooks (ReactComponent, reactComponent, useState, (/\))
 import React.Basic.Hooks as React
 
-mkCounter :: ReactComponent {}
-mkCounter = unsafePerformEffect counter
+counter :: ReactComponent {}
+counter = unsafePerformEffect mkCounter
 
-counter :: Effect (ReactComponent {})
-counter = do
+mkCounter :: Effect (ReactComponent {})
+mkCounter = do
   reactComponent "Counter" \_ -> React.do
-    count /\ setCount <- useState 0
-    let
-      handleClick = handler_ <<< setCount
-    pure
-      $ R.div_
-          [ R.button { onClick: handleClick (_ - 1), children: [ R.text "-" ] }
-          , R.div_ [ R.text (show count) ]
-          , R.button { onClick: handleClick (_ + 1), children: [ R.text "+" ] }
-          ]
+    count /\ updateCount <- useState 0
+    pure $ R.div_
+      [ R.button { onClick: handler_ $ updateCount (_ - 1), children: [ R.text "-" ] }
+      , R.div_ [ R.text (show count) ]
+      , R.button { onClick: handler_ $ updateCount (_ + 1), children: [ R.text "+" ] }
+      ]

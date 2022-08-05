@@ -10,19 +10,19 @@
     "eject": "react-scripts eject"
   },
   "dependencies": {
-    "@craco/craco": "^6.4.2",
-    "@types/node": "^16.11.11",
-    "@types/react": "^17.0.37",
-    "@types/react-dom": "^17.0.11",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
+    "@craco/craco": "^6.4.5",
+    "@types/node": "^18.6.4",
+    "@types/react": "^18.0.15",
+    "@types/react-dom": "^18.0.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-scripts": "4.0.3",
-    "typescript": "~4.5.2"
+    "typescript": "^4.4.0"
   },
   "devDependencies": {
-    "craco-purescript-loader": "^1.0.2",
-    "purescript": "^0.14.5",
-    "spago": "^0.20.3"
+    "craco-purescript-loader": "^2.0.0",
+    "purescript": "^0.15.4",
+    "spago": "^0.20.9"
   },
   "eslintConfig": {
     "extends": "react-app"

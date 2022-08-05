@@ -2,7 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-import { mkCounter as Counter } from './Counter.purs'
+import { counter as Counter } from './Counter.purs'
 
 function App() {
   return (
