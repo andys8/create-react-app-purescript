@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "postinstall": "spago build --deps-only",
-    "start": "craco start",
+    "start": "NODE_OPTIONS=--openssl-legacy-provider npx craco start",
     "build": "craco build",
     "test": "craco test",
     "eject": "react-scripts eject"
